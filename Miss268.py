@@ -10,3 +10,11 @@ class Solution(object):
                 return f1
             else:
                 continue
+
+#Difference approach
+class Solution(object):
+    def missingNumber(self, nums):
+        value  = 0
+        for i in range(len(nums)+1):
+            value += 1
+        return value - sum(nums)
