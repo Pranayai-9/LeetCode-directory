@@ -14,4 +14,9 @@ class Solution(object):
                         continue
             return op
        
-        
+
+#Direct return answer
+class Solution(object):
+    def minOperations(self, nums, k):
+        return sum(nums) % k
+
