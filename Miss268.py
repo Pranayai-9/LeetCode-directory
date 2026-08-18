@@ -18,3 +18,9 @@ class Solution(object):
         for i in range(len(nums)+1):
             value += 1
         return value - sum(nums)
+
+#Gauss formula
+class Solution(object):
+    def missingNumber(self, nums):
+        value  = (len(nums) * (len(nums) + 1))/2
+        return value - sum(nums)
