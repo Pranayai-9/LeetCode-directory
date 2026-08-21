@@ -8,3 +8,11 @@ class Solution(object):
                 return False
         return True
 
+#O(1) space complexity using counters
+from collections import Counter
+
+class Solution(object):
+    def canConstruct(self, ransomNote, magazine):
+        # Subtracting counts clears keys that have a count <= 0
+        return not (Counter(ransomNote) - Counter(magazine))
+
